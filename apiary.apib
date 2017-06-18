@@ -1,0 +1,30 @@
+FORMAT: 1A
+
+# TDD
+
+Polls is a simple API allowing consumers to view polls and vote in them.
+
+## Login [/login]
+
+### Perform login [POST]
+
++ Attributes
+    + username (string, required) - user to login
+    + password (string, required) - The user's password
+
++ Request (application/json)
+
+    + Body
+    
+            {
+                "username": "test_user@inloop.eu"
+                "password": "example123T*"
+            }
+            
++ Response 201 (application/json)
+
+    + Body
+    
+            {
+                "logged_in": true
+            }

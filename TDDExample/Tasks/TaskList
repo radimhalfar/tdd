@@ -1,0 +1,5 @@
+#Task list
+
+1. Create login functionality in the app using
+- as username there must be valid email entered
+- as password, it has to contain lowercase letter, uppercase letter, number and special character

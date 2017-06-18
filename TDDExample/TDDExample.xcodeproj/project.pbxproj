@@ -51,6 +51,7 @@
 		CE2E98F71EF6E2B000EB9C47 /* TDDExampleTestsQuick.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDDExampleTestsQuick.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE2E98F91EF6E2B000EB9C47 /* TDDExampleTestsQuick.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDExampleTestsQuick.swift; sourceTree = "<group>"; };
 		CE2E98FB1EF6E2B000EB9C47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE2E99011EF6E62000EB9C47 /* TaskList */ = {isa = PBXFileReference; lastKnownFileType = text; name = TaskList; path = Tasks/TaskList; sourceTree = "<group>"; };
 		CF2FB8E272F4E16D79DAFFCA /* Pods-TDDExampleTestsQuick.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TDDExampleTestsQuick.release.xcconfig"; path = "Pods/Target Support Files/Pods-TDDExampleTestsQuick/Pods-TDDExampleTestsQuick.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,6 +101,7 @@
 		CE2E98C61EF6DEF800EB9C47 = {
 			isa = PBXGroup;
 			children = (
+				CE2E99011EF6E62000EB9C47 /* TaskList */,
 				CE2E98F21EF6DFE700EB9C47 /* README.md */,
 				CE2E98D11EF6DEF800EB9C47 /* TDDExample */,
 				CE2E98E61EF6DEF800EB9C47 /* TDDExampleTests */,
