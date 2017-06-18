@@ -11,7 +11,7 @@ import Quick
 import Nimble
 @testable import TDDExample
 
-class UserLoginSpec: QuickSpec {
+class UserServiceSpec: QuickSpec {
 
     override func spec() {
     

@@ -9,7 +9,7 @@
 import XCTest
 @testable import TDDExample
 
-class UserLoginTests: XCTestCase {
+class UserServiceTests: XCTestCase {
     
     // MARK: Environment
     
