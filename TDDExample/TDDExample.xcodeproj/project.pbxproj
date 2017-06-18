@@ -18,6 +18,10 @@
 		CE2E99081EF6F76800EB9C47 /* Defines.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E99071EF6F76800EB9C47 /* Defines.swift */; };
 		CE2E990C1EF6FE8300EB9C47 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E990B1EF6FE8300EB9C47 /* UserService.swift */; };
 		CE2E990E1EF6FE9600EB9C47 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E990D1EF6FE9600EB9C47 /* User.swift */; };
+		CE2E99121EF6FFBE00EB9C47 /* UserServiceValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E99111EF6FFBE00EB9C47 /* UserServiceValidator.swift */; };
+		CE2E99141EF700F100EB9C47 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E99131EF700F100EB9C47 /* Utils.swift */; };
+		CE2E99161EF706A100EB9C47 /* UserServiceValidatorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E99151EF706A100EB9C47 /* UserServiceValidatorSpec.swift */; };
+		CE2E99181EF70B7400EB9C47 /* UserServiceValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E99171EF70B7400EB9C47 /* UserServiceValidatorTests.swift */; };
 		F3E82B9F10BF124B8279AC50 /* Pods_TDDExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 359245DAD5341467766A3DA7 /* Pods_TDDExample.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +65,10 @@
 		CE2E99071EF6F76800EB9C47 /* Defines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defines.swift; sourceTree = "<group>"; };
 		CE2E990B1EF6FE8300EB9C47 /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserService.swift; path = Services/UserService.swift; sourceTree = "<group>"; };
 		CE2E990D1EF6FE9600EB9C47 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Model/User.swift; sourceTree = "<group>"; };
+		CE2E99111EF6FFBE00EB9C47 /* UserServiceValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserServiceValidator.swift; path = Utils/UserServiceValidator.swift; sourceTree = "<group>"; };
+		CE2E99131EF700F100EB9C47 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Utils/Utils.swift; sourceTree = "<group>"; };
+		CE2E99151EF706A100EB9C47 /* UserServiceValidatorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserServiceValidatorSpec.swift; sourceTree = "<group>"; };
+		CE2E99171EF70B7400EB9C47 /* UserServiceValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserServiceValidatorTests.swift; sourceTree = "<group>"; };
 		CF2FB8E272F4E16D79DAFFCA /* Pods-TDDExampleTestsQuick.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TDDExampleTestsQuick.release.xcconfig"; path = "Pods/Target Support Files/Pods-TDDExampleTestsQuick/Pods-TDDExampleTestsQuick.release.xcconfig"; sourceTree = "<group>"; };
 		E4FCB3E5A5308CD998C444B0 /* Pods-TDDExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TDDExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-TDDExample/Pods-TDDExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -139,6 +147,7 @@
 		CE2E98D11EF6DEF800EB9C47 /* TDDExample */ = {
 			isa = PBXGroup;
 			children = (
+				CE2E99131EF700F100EB9C47 /* Utils.swift */,
 				CE2E990A1EF6FE5700EB9C47 /* Services */,
 				CE2E99091EF6FE5000EB9C47 /* Model */,
 				CE2E98D21EF6DEF800EB9C47 /* AppDelegate.swift */,
@@ -156,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				CE2E98E71EF6DEF800EB9C47 /* UserLoginTests.swift */,
+				CE2E99171EF70B7400EB9C47 /* UserServiceValidatorTests.swift */,
 				CE2E98E91EF6DEF800EB9C47 /* Info.plist */,
 			);
 			path = TDDExampleTests;
@@ -165,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				CE2E98F91EF6E2B000EB9C47 /* UserLoginSpec.swift */,
+				CE2E99151EF706A100EB9C47 /* UserServiceValidatorSpec.swift */,
 				CE2E98FB1EF6E2B000EB9C47 /* Info.plist */,
 			);
 			path = TDDExampleTestsQuick;
@@ -190,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				CE2E990F1EF6FED700EB9C47 /* User */,
+				CE2E99111EF6FFBE00EB9C47 /* UserServiceValidator.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -441,6 +453,8 @@
 				CE2E98D51EF6DEF800EB9C47 /* ViewController.swift in Sources */,
 				CE2E990C1EF6FE8300EB9C47 /* UserService.swift in Sources */,
 				CE2E990E1EF6FE9600EB9C47 /* User.swift in Sources */,
+				CE2E99141EF700F100EB9C47 /* Utils.swift in Sources */,
+				CE2E99121EF6FFBE00EB9C47 /* UserServiceValidator.swift in Sources */,
 				CE2E98D31EF6DEF800EB9C47 /* AppDelegate.swift in Sources */,
 				CE2E99081EF6F76800EB9C47 /* Defines.swift in Sources */,
 			);
@@ -451,6 +465,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE2E98E81EF6DEF800EB9C47 /* UserLoginTests.swift in Sources */,
+				CE2E99181EF70B7400EB9C47 /* UserServiceValidatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,6 +473,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE2E99161EF706A100EB9C47 /* UserServiceValidatorSpec.swift in Sources */,
 				CE2E98FA1EF6E2B000EB9C47 /* UserLoginSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

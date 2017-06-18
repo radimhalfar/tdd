@@ -13,6 +13,11 @@ final class UserService {
 
     static func login(user: User, result: @escaping (_ status: Bool, _ error: Error?) -> ()) {
         
+        if let errors = UserServiceValidator.validateLogin(user) {
+            result(false, errors[0])
+            return
+        }
+        
         let parameters: Parameters = ["username": user.userName,
                                       "password": user.password]
         
