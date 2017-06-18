@@ -15,6 +15,7 @@
 		CE2E98DD1EF6DEF800EB9C47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2E98DB1EF6DEF800EB9C47 /* LaunchScreen.storyboard */; };
 		CE2E98E81EF6DEF800EB9C47 /* UserLoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E98E71EF6DEF800EB9C47 /* UserLoginTests.swift */; };
 		CE2E98FA1EF6E2B000EB9C47 /* UserLoginSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E98F91EF6E2B000EB9C47 /* UserLoginSpec.swift */; };
+		CE2E99041EF6F1B800EB9C47 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E99031EF6F1B800EB9C47 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		CE2E98F91EF6E2B000EB9C47 /* UserLoginSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginSpec.swift; sourceTree = "<group>"; };
 		CE2E98FB1EF6E2B000EB9C47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE2E99011EF6E62000EB9C47 /* TaskList */ = {isa = PBXFileReference; lastKnownFileType = text; name = TaskList; path = Tasks/TaskList; sourceTree = "<group>"; };
+		CE2E99031EF6F1B800EB9C47 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = UserLogin/User.swift; sourceTree = "<group>"; };
 		CF2FB8E272F4E16D79DAFFCA /* Pods-TDDExampleTestsQuick.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TDDExampleTestsQuick.release.xcconfig"; path = "Pods/Target Support Files/Pods-TDDExampleTestsQuick/Pods-TDDExampleTestsQuick.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -125,6 +127,7 @@
 		CE2E98D11EF6DEF800EB9C47 /* TDDExample */ = {
 			isa = PBXGroup;
 			children = (
+				CE2E99021EF6F1A600EB9C47 /* UserLogin */,
 				CE2E98D21EF6DEF800EB9C47 /* AppDelegate.swift */,
 				CE2E98D41EF6DEF800EB9C47 /* ViewController.swift */,
 				CE2E98D61EF6DEF800EB9C47 /* Main.storyboard */,
@@ -151,6 +154,14 @@
 				CE2E98FB1EF6E2B000EB9C47 /* Info.plist */,
 			);
 			path = TDDExampleTestsQuick;
+			sourceTree = "<group>";
+		};
+		CE2E99021EF6F1A600EB9C47 /* UserLogin */ = {
+			isa = PBXGroup;
+			children = (
+				CE2E99031EF6F1B800EB9C47 /* User.swift */,
+			);
+			name = UserLogin;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,6 +354,7 @@
 			files = (
 				CE2E98D51EF6DEF800EB9C47 /* ViewController.swift in Sources */,
 				CE2E98D31EF6DEF800EB9C47 /* AppDelegate.swift in Sources */,
+				CE2E99041EF6F1B800EB9C47 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

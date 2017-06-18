@@ -13,6 +13,8 @@ class UserLoginTests: XCTestCase {
     
     // MARK: Environment
     
+    var user: User?
+    
     override func setUp() {
         super.setUp()
         /// Setup your environment in here
@@ -20,6 +22,8 @@ class UserLoginTests: XCTestCase {
          What is the environment needed to accomplish the test ?
          Are there any preconditions ?
          */
+        
+        user = User(userName: "test_user@inloop.eu", password: "example_Password123*")
     }
     
     override func tearDown() {
@@ -37,9 +41,16 @@ class UserLoginTests: XCTestCase {
          - valid credentials are provided
          -
          */
-        let isLoggedIn = false
+        let loginExpectation = expectation(description: "User is logged in")
         
-        /// Make the test fail at first
-        XCTAssert(isLoggedIn == true)
+        user?.login(result: { (status, error) in
+            
+            XCTAssert(status == true)
+            XCTAssert(error == nil)
+            
+            loginExpectation.fulfill()
+        })
+        
+        waitForExpectations(timeout: 5.0, handler: nil)
     }
 }
