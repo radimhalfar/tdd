@@ -16,6 +16,8 @@
 		CE2E98E81EF6DEF800EB9C47 /* UserLoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E98E71EF6DEF800EB9C47 /* UserLoginTests.swift */; };
 		CE2E98FA1EF6E2B000EB9C47 /* UserLoginSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E98F91EF6E2B000EB9C47 /* UserLoginSpec.swift */; };
 		CE2E99041EF6F1B800EB9C47 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E99031EF6F1B800EB9C47 /* User.swift */; };
+		CE2E99081EF6F76800EB9C47 /* Defines.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E99071EF6F76800EB9C47 /* Defines.swift */; };
+		F3E82B9F10BF124B8279AC50 /* Pods_TDDExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 359245DAD5341467766A3DA7 /* Pods_TDDExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,8 @@
 
 /* Begin PBXFileReference section */
 		309C420E471FA743B1E186DB /* Pods-TDDExampleTestsQuick.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TDDExampleTestsQuick.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TDDExampleTestsQuick/Pods-TDDExampleTestsQuick.debug.xcconfig"; sourceTree = "<group>"; };
+		359245DAD5341467766A3DA7 /* Pods_TDDExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TDDExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		448C9C29A0E9785A96FE6BF4 /* Pods-TDDExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TDDExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TDDExample/Pods-TDDExample.debug.xcconfig"; sourceTree = "<group>"; };
 		7FF46768E7155F4D88822D24 /* Pods_TDDExampleTestsQuick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TDDExampleTestsQuick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE2E98CF1EF6DEF800EB9C47 /* TDDExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TDDExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE2E98D21EF6DEF800EB9C47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -54,7 +58,9 @@
 		CE2E98FB1EF6E2B000EB9C47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE2E99011EF6E62000EB9C47 /* TaskList */ = {isa = PBXFileReference; lastKnownFileType = text; name = TaskList; path = Tasks/TaskList; sourceTree = "<group>"; };
 		CE2E99031EF6F1B800EB9C47 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = UserLogin/User.swift; sourceTree = "<group>"; };
+		CE2E99071EF6F76800EB9C47 /* Defines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defines.swift; sourceTree = "<group>"; };
 		CF2FB8E272F4E16D79DAFFCA /* Pods-TDDExampleTestsQuick.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TDDExampleTestsQuick.release.xcconfig"; path = "Pods/Target Support Files/Pods-TDDExampleTestsQuick/Pods-TDDExampleTestsQuick.release.xcconfig"; sourceTree = "<group>"; };
+		E4FCB3E5A5308CD998C444B0 /* Pods-TDDExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TDDExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-TDDExample/Pods-TDDExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3E82B9F10BF124B8279AC50 /* Pods_TDDExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +95,8 @@
 			children = (
 				309C420E471FA743B1E186DB /* Pods-TDDExampleTestsQuick.debug.xcconfig */,
 				CF2FB8E272F4E16D79DAFFCA /* Pods-TDDExampleTestsQuick.release.xcconfig */,
+				448C9C29A0E9785A96FE6BF4 /* Pods-TDDExample.debug.xcconfig */,
+				E4FCB3E5A5308CD998C444B0 /* Pods-TDDExample.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -96,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				7FF46768E7155F4D88822D24 /* Pods_TDDExampleTestsQuick.framework */,
+				359245DAD5341467766A3DA7 /* Pods_TDDExample.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -134,6 +144,7 @@
 				CE2E98D91EF6DEF800EB9C47 /* Assets.xcassets */,
 				CE2E98DB1EF6DEF800EB9C47 /* LaunchScreen.storyboard */,
 				CE2E98DE1EF6DEF800EB9C47 /* Info.plist */,
+				CE2E99071EF6F76800EB9C47 /* Defines.swift */,
 			);
 			path = TDDExample;
 			sourceTree = "<group>";
@@ -171,9 +182,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE2E98EC1EF6DEF800EB9C47 /* Build configuration list for PBXNativeTarget "TDDExample" */;
 			buildPhases = (
+				90B1AE3012A90D04191075BE /* [CP] Check Pods Manifest.lock */,
 				CE2E98CB1EF6DEF800EB9C47 /* Sources */,
 				CE2E98CC1EF6DEF800EB9C47 /* Frameworks */,
 				CE2E98CD1EF6DEF800EB9C47 /* Resources */,
+				E90669CCF869D6E148181EA6 /* [CP] Embed Pods Frameworks */,
+				E85399F46F386A2CB67C1D1E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -345,6 +359,51 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		90B1AE3012A90D04191075BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E85399F46F386A2CB67C1D1E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TDDExample/Pods-TDDExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E90669CCF869D6E148181EA6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TDDExample/Pods-TDDExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -354,6 +413,7 @@
 			files = (
 				CE2E98D51EF6DEF800EB9C47 /* ViewController.swift in Sources */,
 				CE2E98D31EF6DEF800EB9C47 /* AppDelegate.swift in Sources */,
+				CE2E99081EF6F76800EB9C47 /* Defines.swift in Sources */,
 				CE2E99041EF6F1B800EB9C47 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -504,6 +564,7 @@
 		};
 		CE2E98ED1EF6DEF800EB9C47 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 448C9C29A0E9785A96FE6BF4 /* Pods-TDDExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEFINES_MODULE = YES;
@@ -518,6 +579,7 @@
 		};
 		CE2E98EE1EF6DEF800EB9C47 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4FCB3E5A5308CD998C444B0 /* Pods-TDDExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEFINES_MODULE = YES;

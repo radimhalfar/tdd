@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import Alamofire
+import Alamofire
 
 final class User {
     
@@ -19,9 +21,32 @@ final class User {
         self.password = password
     }
     
-    func login(result: (_ status: Bool, _ error: Error?) -> ()) {
+    func login(result: @escaping (_ status: Bool, _ error: Error?) -> ()) {
+        
+        let parameters: Parameters = ["username": userName,
+                                      "password": password]
+        
+        let loginURL = "\(baseURLString + loginEndpoint)"
         
         
-        result(false, NSError(domain: "UserDomain", code: 400, userInfo: [NSLocalizedDescriptionKey: "Login failure"]))
+        Alamofire.request(loginURL, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: nil).responseJSON { response in
+            
+            // Parse JSON response 
+            debugPrint("Response from login request is \(response)")
+            
+            switch response.result {
+            case .success(let data):
+            
+                let responseDict = data as? [String: Bool]
+                if let loginResult = responseDict?["logged_in"] {
+                    result(loginResult, nil)
+                } else {
+                    result(false, NSError(domain: "User", code: 404, userInfo: [NSLocalizedDescriptionKey: "invalid response"]))
+                }
+                
+            case .failure(let error):
+                result(false, error)
+            }
+        }
     }
 }

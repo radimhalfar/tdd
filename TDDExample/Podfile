@@ -7,6 +7,14 @@ def testing_pods
     pod 'Nimble'
 end
 
+def dev_pods
+    pod 'Alamofire', '~> 4.5'
+end
+
+target 'TDDExample' do 
+    dev_pods
+end
+
 target 'TDDExampleTestsQuick' do
     testing_pods
 end
