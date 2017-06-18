@@ -13,7 +13,7 @@ class UserLoginTests: XCTestCase {
     
     // MARK: Environment
     
-    var user: User?
+    var user: User!
     
     override func setUp() {
         super.setUp()
@@ -43,7 +43,7 @@ class UserLoginTests: XCTestCase {
          */
         let loginExpectation = expectation(description: "User is logged in")
         
-        user?.login(result: { (status, error) in
+        UserService.login(user: user, result: { (status, error) in
             
             XCTAssert(status == true)
             XCTAssert(error == nil)

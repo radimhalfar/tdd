@@ -15,8 +15,9 @@
 		CE2E98DD1EF6DEF800EB9C47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2E98DB1EF6DEF800EB9C47 /* LaunchScreen.storyboard */; };
 		CE2E98E81EF6DEF800EB9C47 /* UserLoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E98E71EF6DEF800EB9C47 /* UserLoginTests.swift */; };
 		CE2E98FA1EF6E2B000EB9C47 /* UserLoginSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E98F91EF6E2B000EB9C47 /* UserLoginSpec.swift */; };
-		CE2E99041EF6F1B800EB9C47 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E99031EF6F1B800EB9C47 /* User.swift */; };
 		CE2E99081EF6F76800EB9C47 /* Defines.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E99071EF6F76800EB9C47 /* Defines.swift */; };
+		CE2E990C1EF6FE8300EB9C47 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E990B1EF6FE8300EB9C47 /* UserService.swift */; };
+		CE2E990E1EF6FE9600EB9C47 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E990D1EF6FE9600EB9C47 /* User.swift */; };
 		F3E82B9F10BF124B8279AC50 /* Pods_TDDExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 359245DAD5341467766A3DA7 /* Pods_TDDExample.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,8 +58,9 @@
 		CE2E98F91EF6E2B000EB9C47 /* UserLoginSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginSpec.swift; sourceTree = "<group>"; };
 		CE2E98FB1EF6E2B000EB9C47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE2E99011EF6E62000EB9C47 /* TaskList */ = {isa = PBXFileReference; lastKnownFileType = text; name = TaskList; path = Tasks/TaskList; sourceTree = "<group>"; };
-		CE2E99031EF6F1B800EB9C47 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = UserLogin/User.swift; sourceTree = "<group>"; };
 		CE2E99071EF6F76800EB9C47 /* Defines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defines.swift; sourceTree = "<group>"; };
+		CE2E990B1EF6FE8300EB9C47 /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserService.swift; path = Services/UserService.swift; sourceTree = "<group>"; };
+		CE2E990D1EF6FE9600EB9C47 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Model/User.swift; sourceTree = "<group>"; };
 		CF2FB8E272F4E16D79DAFFCA /* Pods-TDDExampleTestsQuick.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TDDExampleTestsQuick.release.xcconfig"; path = "Pods/Target Support Files/Pods-TDDExampleTestsQuick/Pods-TDDExampleTestsQuick.release.xcconfig"; sourceTree = "<group>"; };
 		E4FCB3E5A5308CD998C444B0 /* Pods-TDDExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TDDExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-TDDExample/Pods-TDDExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -137,7 +139,8 @@
 		CE2E98D11EF6DEF800EB9C47 /* TDDExample */ = {
 			isa = PBXGroup;
 			children = (
-				CE2E99021EF6F1A600EB9C47 /* UserLogin */,
+				CE2E990A1EF6FE5700EB9C47 /* Services */,
+				CE2E99091EF6FE5000EB9C47 /* Model */,
 				CE2E98D21EF6DEF800EB9C47 /* AppDelegate.swift */,
 				CE2E98D41EF6DEF800EB9C47 /* ViewController.swift */,
 				CE2E98D61EF6DEF800EB9C47 /* Main.storyboard */,
@@ -167,12 +170,36 @@
 			path = TDDExampleTestsQuick;
 			sourceTree = "<group>";
 		};
-		CE2E99021EF6F1A600EB9C47 /* UserLogin */ = {
+		CE2E99021EF6F1A600EB9C47 /* User */ = {
 			isa = PBXGroup;
 			children = (
-				CE2E99031EF6F1B800EB9C47 /* User.swift */,
+				CE2E990D1EF6FE9600EB9C47 /* User.swift */,
 			);
-			name = UserLogin;
+			name = User;
+			sourceTree = "<group>";
+		};
+		CE2E99091EF6FE5000EB9C47 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE2E99021EF6F1A600EB9C47 /* User */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CE2E990A1EF6FE5700EB9C47 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CE2E990F1EF6FED700EB9C47 /* User */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		CE2E990F1EF6FED700EB9C47 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				CE2E990B1EF6FE8300EB9C47 /* UserService.swift */,
+			);
+			name = User;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -412,9 +439,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE2E98D51EF6DEF800EB9C47 /* ViewController.swift in Sources */,
+				CE2E990C1EF6FE8300EB9C47 /* UserService.swift in Sources */,
+				CE2E990E1EF6FE9600EB9C47 /* User.swift in Sources */,
 				CE2E98D31EF6DEF800EB9C47 /* AppDelegate.swift in Sources */,
 				CE2E99081EF6F76800EB9C47 /* Defines.swift in Sources */,
-				CE2E99041EF6F1B800EB9C47 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

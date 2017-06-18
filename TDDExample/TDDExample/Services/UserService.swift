@@ -1,5 +1,5 @@
 //
-//  User.swift
+//  UserService.swift
 //  TDDExample
 //
 //  Created by Radim Halfar on 18.06.17.
@@ -8,35 +8,25 @@
 
 import Foundation
 import Alamofire
-import Alamofire
 
-final class User {
-    
-    let userName: String
-    
-    let password: String
-    
-    init(userName: String, password: String) {
-        self.userName = userName
-        self.password = password
-    }
-    
-    func login(result: @escaping (_ status: Bool, _ error: Error?) -> ()) {
+final class UserService {
+
+    static func login(user: User, result: @escaping (_ status: Bool, _ error: Error?) -> ()) {
         
-        let parameters: Parameters = ["username": userName,
-                                      "password": password]
+        let parameters: Parameters = ["username": user.userName,
+                                      "password": user.password]
         
         let loginURL = "\(baseURLString + loginEndpoint)"
         
         
         Alamofire.request(loginURL, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: nil).responseJSON { response in
             
-            // Parse JSON response 
+            // Parse JSON response
             debugPrint("Response from login request is \(response)")
             
             switch response.result {
             case .success(let data):
-            
+                
                 let responseDict = data as? [String: Bool]
                 if let loginResult = responseDict?["logged_in"] {
                     result(loginResult, nil)
@@ -49,4 +39,5 @@ final class User {
             }
         }
     }
+
 }

@@ -32,7 +32,7 @@ class UserLoginSpec: QuickSpec {
                 /// define expected outcome
                 it("should be logged in") {
                 
-                    user.login(result: { (status, error) in
+                    UserService.login(user: user, result: { (status, error) in
                         isLoggedIn = status
                         loginError = error
                     })
