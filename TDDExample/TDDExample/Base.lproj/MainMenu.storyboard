@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Fws-xX-YKU">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="d64-K2-TN3">
+            <objects>
+                <viewController id="Fws-xX-YKU" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ngk-LP-Ofq"/>
+                        <viewControllerLayoutGuide type="bottom" id="fJF-RR-g8g"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MeS-f4-ho7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tdd" translatesAutoresizingMaskIntoConstraints="NO" id="VcK-bh-qJ3">
+                                <rect key="frame" x="32" y="171.5" width="310" height="324"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="VcK-bh-qJ3" secondAttribute="height" multiplier="45:47" id="j1Y-vz-aUv"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VcK-bh-qJ3" firstAttribute="leading" secondItem="MeS-f4-ho7" secondAttribute="leading" constant="32" id="HHI-Dj-g8q"/>
+                            <constraint firstItem="VcK-bh-qJ3" firstAttribute="centerY" secondItem="MeS-f4-ho7" secondAttribute="centerY" id="LJl-Su-yDI"/>
+                            <constraint firstItem="VcK-bh-qJ3" firstAttribute="centerX" secondItem="MeS-f4-ho7" secondAttribute="centerX" id="SsG-H3-UmN"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1mF-h5-Hdx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-170" y="130"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tdd" width="765" height="799"/>
+    </resources>
+</document>

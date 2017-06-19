@@ -10,11 +10,6 @@ import Foundation
 
 final class UserServiceValidator {
     
-    static let invalidEmail = NSError.userError(with: "Invalid email")
-    static let invalidEmailLength = NSError.userError(with: "Invalid email length")
-    static let invalidPassword = NSError.userError(with: "Invalid password")
-    static let invalidPasswordLength = NSError.userError(with: "Invalid password length")
-    
     static func validateLogin(_ user: User) -> [Error]? {
         // user.username cannot be empty
         
@@ -25,22 +20,22 @@ final class UserServiceValidator {
         
         /// Check for lenght
         if username.trimmingCharacters(in: .whitespaces).characters.count == 0 {
-            errors.append(invalidEmailLength)
+            errors.append(Errors.invalidEmailLength)
         }
         
         /// Check for valid email
         if username.isValidEmail == false {
-            errors.append(invalidEmail)
+            errors.append(Errors.invalidEmail)
         }
         
         /// check for password length
         if password.trimmingCharacters(in: .whitespaces).characters.count == 0 {
-            errors.append(invalidPasswordLength)
+            errors.append(Errors.invalidPasswordLength)
         }
         
         /// check for password validity
         if password.isValidPassword == false {
-            errors.append(invalidPassword)
+            errors.append(Errors.invalidPassword)
         }
         
         return errors.count > 0 ? errors : nil

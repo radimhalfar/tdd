@@ -6,7 +6,7 @@
 //  Copyright © 2017 Inloop, s.r.o. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 extension String {
 
@@ -25,9 +25,28 @@ extension String {
     }
 }
 
-extension NSError {
+extension UITextField {
     
-    static func userError(with description: String) -> NSError {
-        return NSError(domain: "User", code: 1001, userInfo: [NSLocalizedDescriptionKey: description])
+    func markInvalid() {
+    
+        self.layer.borderColor = UIColor.red.cgColor
+        self.layer.borderWidth = 2.0
+    }
+    
+    func markValid() {
+        self.layer.borderWidth = 0.0
+        self.layer.borderColor = UIColor.clear.cgColor
+    }
+}
+
+extension UIViewController {
+    
+    func showSafeAlert(with title: String, message: String, cancelButtonText: String) {
+        let controller = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        controller.addAction(UIAlertAction(title: cancelButtonText, style: .cancel, handler: nil))
+        
+        DispatchQueue.main.async {
+            self.present(controller, animated: true, completion: nil)
+        }
     }
 }

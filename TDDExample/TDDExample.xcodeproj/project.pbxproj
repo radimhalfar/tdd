@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		545780352C33ECFA9597E298 /* Pods_TDDExampleTestsQuick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FF46768E7155F4D88822D24 /* Pods_TDDExampleTestsQuick.framework */; };
 		CE2E98D31EF6DEF800EB9C47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E98D21EF6DEF800EB9C47 /* AppDelegate.swift */; };
-		CE2E98D51EF6DEF800EB9C47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E98D41EF6DEF800EB9C47 /* ViewController.swift */; };
-		CE2E98D81EF6DEF800EB9C47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2E98D61EF6DEF800EB9C47 /* Main.storyboard */; };
+		CE2E98D51EF6DEF800EB9C47 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E98D41EF6DEF800EB9C47 /* LoginViewController.swift */; };
+		CE2E98D81EF6DEF800EB9C47 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2E98D61EF6DEF800EB9C47 /* Login.storyboard */; };
 		CE2E98DA1EF6DEF800EB9C47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE2E98D91EF6DEF800EB9C47 /* Assets.xcassets */; };
 		CE2E98DD1EF6DEF800EB9C47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2E98DB1EF6DEF800EB9C47 /* LaunchScreen.storyboard */; };
 		CE2E98E81EF6DEF800EB9C47 /* UserServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E98E71EF6DEF800EB9C47 /* UserServiceTests.swift */; };
@@ -22,6 +22,9 @@
 		CE2E99141EF700F100EB9C47 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E99131EF700F100EB9C47 /* Utils.swift */; };
 		CE2E99161EF706A100EB9C47 /* UserServiceValidatorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E99151EF706A100EB9C47 /* UserServiceValidatorSpec.swift */; };
 		CE2E99181EF70B7400EB9C47 /* UserServiceValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E99171EF70B7400EB9C47 /* UserServiceValidatorTests.swift */; };
+		CE2E991C1EF70E5B00EB9C47 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E991B1EF70E5B00EB9C47 /* LoginViewModel.swift */; };
+		CEA8E9E11EF8219F00C9E046 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA8E9E01EF8219F00C9E046 /* Errors.swift */; };
+		CEA8E9E51EF82B7200C9E046 /* MainMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA8E9E31EF82B7200C9E046 /* MainMenu.storyboard */; };
 		F3E82B9F10BF124B8279AC50 /* Pods_TDDExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 359245DAD5341467766A3DA7 /* Pods_TDDExample.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,8 +52,8 @@
 		7FF46768E7155F4D88822D24 /* Pods_TDDExampleTestsQuick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TDDExampleTestsQuick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE2E98CF1EF6DEF800EB9C47 /* TDDExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TDDExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE2E98D21EF6DEF800EB9C47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CE2E98D41EF6DEF800EB9C47 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CE2E98D71EF6DEF800EB9C47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE2E98D41EF6DEF800EB9C47 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CE2E98D71EF6DEF800EB9C47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
 		CE2E98D91EF6DEF800EB9C47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE2E98DC1EF6DEF800EB9C47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE2E98DE1EF6DEF800EB9C47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -69,6 +72,9 @@
 		CE2E99131EF700F100EB9C47 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Utils/Utils.swift; sourceTree = "<group>"; };
 		CE2E99151EF706A100EB9C47 /* UserServiceValidatorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserServiceValidatorSpec.swift; sourceTree = "<group>"; };
 		CE2E99171EF70B7400EB9C47 /* UserServiceValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserServiceValidatorTests.swift; sourceTree = "<group>"; };
+		CE2E991B1EF70E5B00EB9C47 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		CEA8E9E01EF8219F00C9E046 /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Errors.swift; path = Model/Errors/Errors.swift; sourceTree = "<group>"; };
+		CEA8E9E41EF82B7200C9E046 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainMenu.storyboard; sourceTree = "<group>"; };
 		CF2FB8E272F4E16D79DAFFCA /* Pods-TDDExampleTestsQuick.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TDDExampleTestsQuick.release.xcconfig"; path = "Pods/Target Support Files/Pods-TDDExampleTestsQuick/Pods-TDDExampleTestsQuick.release.xcconfig"; sourceTree = "<group>"; };
 		E4FCB3E5A5308CD998C444B0 /* Pods-TDDExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TDDExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-TDDExample/Pods-TDDExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -147,16 +153,14 @@
 		CE2E98D11EF6DEF800EB9C47 /* TDDExample */ = {
 			isa = PBXGroup;
 			children = (
+				CE2E99191EF70DFF00EB9C47 /* App */,
 				CE2E99131EF700F100EB9C47 /* Utils.swift */,
 				CE2E990A1EF6FE5700EB9C47 /* Services */,
 				CE2E99091EF6FE5000EB9C47 /* Model */,
 				CE2E98D21EF6DEF800EB9C47 /* AppDelegate.swift */,
-				CE2E98D41EF6DEF800EB9C47 /* ViewController.swift */,
-				CE2E98D61EF6DEF800EB9C47 /* Main.storyboard */,
 				CE2E98D91EF6DEF800EB9C47 /* Assets.xcassets */,
 				CE2E98DB1EF6DEF800EB9C47 /* LaunchScreen.storyboard */,
 				CE2E98DE1EF6DEF800EB9C47 /* Info.plist */,
-				CE2E99071EF6F76800EB9C47 /* Defines.swift */,
 			);
 			path = TDDExample;
 			sourceTree = "<group>";
@@ -192,6 +196,7 @@
 		CE2E99091EF6FE5000EB9C47 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CEA8E9DF1EF8218D00C9E046 /* Errors */,
 				CE2E99021EF6F1A600EB9C47 /* User */,
 			);
 			name = Model;
@@ -212,6 +217,42 @@
 				CE2E990B1EF6FE8300EB9C47 /* UserService.swift */,
 			);
 			name = User;
+			sourceTree = "<group>";
+		};
+		CE2E99191EF70DFF00EB9C47 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CE2E99071EF6F76800EB9C47 /* Defines.swift */,
+				CE2E991A1EF70E1D00EB9C47 /* Login */,
+				CEA8E9E21EF82B4800C9E046 /* MainMenu */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		CE2E991A1EF70E1D00EB9C47 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				CE2E98D61EF6DEF800EB9C47 /* Login.storyboard */,
+				CE2E98D41EF6DEF800EB9C47 /* LoginViewController.swift */,
+				CE2E991B1EF70E5B00EB9C47 /* LoginViewModel.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		CEA8E9DF1EF8218D00C9E046 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				CEA8E9E01EF8219F00C9E046 /* Errors.swift */,
+			);
+			name = Errors;
+			sourceTree = "<group>";
+		};
+		CEA8E9E21EF82B4800C9E046 /* MainMenu */ = {
+			isa = PBXGroup;
+			children = (
+				CEA8E9E31EF82B7200C9E046 /* MainMenu.storyboard */,
+			);
+			name = MainMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,9 +371,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEA8E9E51EF82B7200C9E046 /* MainMenu.storyboard in Resources */,
 				CE2E98DD1EF6DEF800EB9C47 /* LaunchScreen.storyboard in Resources */,
 				CE2E98DA1EF6DEF800EB9C47 /* Assets.xcassets in Resources */,
-				CE2E98D81EF6DEF800EB9C47 /* Main.storyboard in Resources */,
+				CE2E98D81EF6DEF800EB9C47 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,12 +492,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE2E98D51EF6DEF800EB9C47 /* ViewController.swift in Sources */,
+				CE2E98D51EF6DEF800EB9C47 /* LoginViewController.swift in Sources */,
 				CE2E990C1EF6FE8300EB9C47 /* UserService.swift in Sources */,
 				CE2E990E1EF6FE9600EB9C47 /* User.swift in Sources */,
 				CE2E99141EF700F100EB9C47 /* Utils.swift in Sources */,
+				CE2E991C1EF70E5B00EB9C47 /* LoginViewModel.swift in Sources */,
 				CE2E99121EF6FFBE00EB9C47 /* UserServiceValidator.swift in Sources */,
 				CE2E98D31EF6DEF800EB9C47 /* AppDelegate.swift in Sources */,
+				CEA8E9E11EF8219F00C9E046 /* Errors.swift in Sources */,
 				CE2E99081EF6F76800EB9C47 /* Defines.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -494,12 +538,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CE2E98D61EF6DEF800EB9C47 /* Main.storyboard */ = {
+		CE2E98D61EF6DEF800EB9C47 /* Login.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				CE2E98D71EF6DEF800EB9C47 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Login.storyboard;
 			sourceTree = "<group>";
 		};
 		CE2E98DB1EF6DEF800EB9C47 /* LaunchScreen.storyboard */ = {
@@ -508,6 +552,14 @@
 				CE2E98DC1EF6DEF800EB9C47 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CEA8E9E31EF82B7200C9E046 /* MainMenu.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEA8E9E41EF82B7200C9E046 /* Base */,
+			);
+			name = MainMenu.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -610,6 +662,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 448C9C29A0E9785A96FE6BF4 /* Pods-TDDExample.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 4369768AU4;
@@ -625,6 +678,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E4FCB3E5A5308CD998C444B0 /* Pods-TDDExample.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 4369768AU4;

@@ -34,7 +34,7 @@ class UserServiceValidatorTests: XCTestCase {
         
         let containsExpectedError = result?.filter {
             
-            $0.localizedDescription == UserServiceValidator.invalidEmail.localizedDescription
+            $0.localizedDescription == Errors.invalidEmail.localizedDescription
         }
         
         XCTAssertNotNil(containsExpectedError)
@@ -47,7 +47,7 @@ class UserServiceValidatorTests: XCTestCase {
         
         let containsExpectedError = result?.filter {
             
-            $0.localizedDescription == UserServiceValidator.invalidEmailLength.localizedDescription
+            $0.localizedDescription == Errors.invalidEmailLength.localizedDescription
         }
         
         XCTAssertNotNil(containsExpectedError)
@@ -60,7 +60,7 @@ class UserServiceValidatorTests: XCTestCase {
         
         let containsExpectedError = result?.filter {
             
-            $0.localizedDescription == UserServiceValidator.invalidPassword.localizedDescription
+            $0.localizedDescription == Errors.invalidPassword.localizedDescription
         }
         
         XCTAssertNotNil(containsExpectedError)
@@ -73,7 +73,7 @@ class UserServiceValidatorTests: XCTestCase {
         
         let containsExpectedError = result?.filter {
             
-            $0.localizedDescription == UserServiceValidator.invalidPassword.localizedDescription
+            $0.localizedDescription == Errors.invalidPassword.localizedDescription
         }
         
         XCTAssertNotNil(containsExpectedError)

@@ -40,7 +40,7 @@ class UserServiceValidatorSpec: QuickSpec {
                     
                     let containsExpectedError = result.filter {
                     
-                        $0.localizedDescription == UserServiceValidator.invalidEmail.localizedDescription
+                        $0.localizedDescription == Errors.invalidEmail.localizedDescription
                     }
                     
                     expect(containsExpectedError).toNot(beNil())
@@ -60,7 +60,7 @@ class UserServiceValidatorSpec: QuickSpec {
                     
                     let containsExpectedError = result.filter {
                         
-                        $0.localizedDescription == UserServiceValidator.invalidEmailLength.localizedDescription
+                        $0.localizedDescription == Errors.invalidEmailLength.localizedDescription
                     }
                     
                     expect(containsExpectedError).toNot(beNil())
@@ -80,7 +80,7 @@ class UserServiceValidatorSpec: QuickSpec {
                     
                     let containsExpectedError = result.filter {
                         
-                        $0.localizedDescription == UserServiceValidator.invalidPassword.localizedDescription
+                        $0.localizedDescription == Errors.invalidPassword.localizedDescription
                     }
                     
                     expect(containsExpectedError).toNot(beNil())
@@ -100,7 +100,7 @@ class UserServiceValidatorSpec: QuickSpec {
                     
                     let containsExpectedError = result.filter {
                         
-                        $0.localizedDescription == UserServiceValidator.invalidPasswordLength.localizedDescription
+                        $0.localizedDescription == Errors.invalidPasswordLength.localizedDescription
                     }
                     
                     expect(containsExpectedError).toNot(beNil())
