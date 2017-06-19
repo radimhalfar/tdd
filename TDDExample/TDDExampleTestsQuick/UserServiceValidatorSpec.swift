@@ -33,17 +33,12 @@ class UserServiceValidatorSpec: QuickSpec {
                 
                 it("should invalid email error") {
                     
-                    guard let result = UserServiceValidator.validateLogin(user) else {
+                    guard let result = UserServiceValidator.validateLogin(user) as? [TDDError] else {
                         fail("Invalid validation")
                         return
                     }
                     
-                    let containsExpectedError = result.filter {
-                    
-                        $0.localizedDescription == Errors.invalidEmail.localizedDescription
-                    }
-                    
-                    expect(containsExpectedError).toNot(beNil())
+                    expect(result).to(contain(Errors.invalidEmail))
                 }
             }
             
@@ -53,17 +48,12 @@ class UserServiceValidatorSpec: QuickSpec {
                 
                 it("should invalid email error") {
                     
-                    guard let result = UserServiceValidator.validateLogin(user) else {
+                    guard let result = UserServiceValidator.validateLogin(user) as? [TDDError] else {
                         fail("Invalid validation")
                         return
                     }
                     
-                    let containsExpectedError = result.filter {
-                        
-                        $0.localizedDescription == Errors.invalidEmailLength.localizedDescription
-                    }
-                    
-                    expect(containsExpectedError).toNot(beNil())
+                    expect(result).to(contain(Errors.invalidEmailLength))
                 }
             }
             
@@ -73,17 +63,12 @@ class UserServiceValidatorSpec: QuickSpec {
                 
                 it("should invalid email error") {
                     
-                    guard let result = UserServiceValidator.validateLogin(user) else {
+                    guard let result = UserServiceValidator.validateLogin(user) as? [TDDError] else {
                         fail("Invalid validation")
                         return
                     }
                     
-                    let containsExpectedError = result.filter {
-                        
-                        $0.localizedDescription == Errors.invalidPassword.localizedDescription
-                    }
-                    
-                    expect(containsExpectedError).toNot(beNil())
+                    expect(result).to(contain(Errors.invalidPassword))
                 }
             }
 
@@ -93,17 +78,12 @@ class UserServiceValidatorSpec: QuickSpec {
                 
                 it("should invalid email error") {
                     
-                    guard let result = UserServiceValidator.validateLogin(user) else {
+                    guard let result = UserServiceValidator.validateLogin(user) as? [TDDError] else {
                         fail("Invalid validation")
                         return
                     }
-                    
-                    let containsExpectedError = result.filter {
-                        
-                        $0.localizedDescription == Errors.invalidPasswordLength.localizedDescription
-                    }
-                    
-                    expect(containsExpectedError).toNot(beNil())
+            
+                    expect(result).to(contain(Errors.invalidPasswordLength))
                 }
             }
         }

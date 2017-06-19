@@ -14,6 +14,7 @@ final class UserService {
     static func login(user: User, result: @escaping (_ status: Bool, _ error: Error?) -> ()) {
         
         if let errors = UserServiceValidator.validateLogin(user) {
+            /// Due to implementation restrictions this will never happen
             result(false, errors[0])
             return
         }
