@@ -31,9 +31,9 @@ class UserServiceValidatorSpec: QuickSpec {
                 
                 let user = User(userName: "testUser@", password: "Example1#")
                 
-                it("should invalid email error") {
+                it("should report invalid email error") {
                     
-                    guard let result = UserServiceValidator.validateLogin(user) as? [TDDError] else {
+                    guard let result = UserServiceValidator.validateLogin(user) else {
                         fail("Invalid validation")
                         return
                     }
@@ -46,9 +46,9 @@ class UserServiceValidatorSpec: QuickSpec {
                 
                 let user = User(userName: "", password: "Example1#")
                 
-                it("should invalid email error") {
+                it("should report invalid email error") {
                     
-                    guard let result = UserServiceValidator.validateLogin(user) as? [TDDError] else {
+                    guard let result = UserServiceValidator.validateLogin(user) else {
                         fail("Invalid validation")
                         return
                     }
@@ -61,9 +61,9 @@ class UserServiceValidatorSpec: QuickSpec {
                 
                 let user = User(userName: "testUser@inloop.eu", password: "Example1")
                 
-                it("should invalid email error") {
+                it("should report invalid email error") {
                     
-                    guard let result = UserServiceValidator.validateLogin(user) as? [TDDError] else {
+                    guard let result = UserServiceValidator.validateLogin(user) else {
                         fail("Invalid validation")
                         return
                     }
@@ -72,13 +72,13 @@ class UserServiceValidatorSpec: QuickSpec {
                 }
             }
 
-            context("After validating user login with invalid password langth") {
+            context("After validating user login with invalid password length") {
                 
                 let user = User(userName: "testUser@inloop.eu", password: "")
                 
-                it("should invalid email error") {
+                it("should report invalid email error") {
                     
-                    guard let result = UserServiceValidator.validateLogin(user) as? [TDDError] else {
+                    guard let result = UserServiceValidator.validateLogin(user) else {
                         fail("Invalid validation")
                         return
                     }

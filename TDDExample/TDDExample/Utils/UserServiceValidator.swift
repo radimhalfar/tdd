@@ -10,10 +10,10 @@ import Foundation
 
 final class UserServiceValidator {
     
-    static func validateLogin(_ user: User) -> [Error]? {
+    static func validateLogin(_ user: User) -> [TDDError]? {
         // user.username cannot be empty
         
-        var errors = [Error]()
+        var errors = [TDDError]()
         
         let username = user.userName
         let password = user.password
